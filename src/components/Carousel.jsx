@@ -27,7 +27,7 @@ const Carousel = (props) => {
       </div>
       <div
         ref={carousel}
-        className="flex gap-5 overflow-x-auto container transition-all scroll-smooth"
+        className="flex gap-5 overflow-x-auto overflow-y-hidden container transition-all scroll-smooth"
       >
         {props.children}
       </div>

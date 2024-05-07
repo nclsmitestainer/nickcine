@@ -27,11 +27,11 @@ const Search = () => {
   return (
     <main className="container">
       <section>
-        <h2 className="text-white font-display font-medium text-l my-10">
+        <h2 className="text-white font-display font-medium text-l text-center my-10">
           Esses são os resultados para:{' '}
           <span className="text-red-700">{query}</span>
         </h2>
-        <div className="flex flex-none flex-wrap gap-8">
+        <div className="flex flex-none flex-wrap justify-center gap-8">
           {movies.length > 0 &&
             movies.map((movie) => <CardMovie key={movie.id} movie={movie} />)}
         </div>

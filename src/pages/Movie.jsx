@@ -38,7 +38,7 @@ const Movie = () => {
     <main className="container text-white">
       {movie && (
         <>
-          <section className="flex justify-between mt-10 gap-28">
+          <section className="flex justify-between gap-28 m-10 flex-col lg:flex-row lg:mt-10 max-[1024px]:items-center">
             <div className="flex flex-none flex-col max-w-[520px]">
               <div className="w-full h-full">
                 <img
@@ -47,16 +47,16 @@ const Movie = () => {
                   alt={movie.title}
                 />
               </div>
-              <h2 className="text-center mt-5 font-semibold font-display text-xl max-w-[500px]">
+              <h2 className="text-center mt-5 font-semibold font-display text-l max-w-[500px] lg:text-xl">
                 {movie.title}
               </h2>
               <p className="text-center mt-2 font-medium text-base">
                 {movie.tagline}
               </p>
-              <ul className="flex justify-between mt-10">
+              <ul className="flex justify-between mt-10 flex-wrap">
                 {movie.genres.map((genre) => (
                   <li
-                    className="text-sm uppercase font-body font-bold"
+                    className="text-sm p-2 uppercase font-body font-bold"
                     key={genre.id}
                   >
                     {genre.name}
